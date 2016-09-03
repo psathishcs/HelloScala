@@ -31,6 +31,7 @@ object HelloScalaCassandra extends App {
   }
   this.connect("127.0.0.1");
   resultSet = session.execute(cql);
-  var rows = resultSet.all();
+  var rows = resultSet.all;
+  
   this.close();
 }
